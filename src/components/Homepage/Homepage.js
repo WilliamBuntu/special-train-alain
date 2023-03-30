@@ -1,16 +1,9 @@
 import React from 'react'
 import Navigation from '../Navigation/Navigation'
 import './Homepage.css';
-import image from "../Navigation/image.jpg"
-import Homecards from '../Homecards/Homecards';
-import Homecards2 from '../Homecards/Homecards2';
-import unsplash from "../Navigation/unsplash.jpg"
-import unsplash2 from "../Navigation/unsplash2.jpg"
 import ellip from "../Navigation/ellip.jpg";
 import group from "../Navigation/group.jpg";
-import norrs from "../Navigation/norrs.jpg"
-import { IoIosArrowBack } from "react-icons/io"
-import { FcNext } from "react-icons/fc"
+import bb43 from "../Homepage/bb43.jpg"
 import Carousel from 'react-elastic-carousel';
 import { v4 as uuidv4 } from 'uuid';
 import { AiOutlineSearch } from "react-icons/ai"
@@ -114,13 +107,13 @@ const Homepage = () => {
       <div className="section1">
         <div className='carousel-container' id='carousel-1-container'>
         {/* <h1 style={{position: "absolute", color: "white", marginLeft:"42%", marginTop: "-60%", fontSize: "26px"}}>Welcome to New Generation Academy</h1> */}
-          <h1 style={{position: "absolute", color: "rgb(169, 165, 165)", marginLeft:"-55%", marginTop: "-57%", fontSize: "20px"}}>Student Project</h1>
+          <h1 style={{position: "absolute", color: "#ffff", marginLeft:"-55%", marginTop: "-59.3%", fontSize: "20px"}}>Student Project</h1>
           
         <Carousel itemsToShow={1}>
         {
                 Homecard.map(item =>(
                   <div key={item.id}>
-                    <iframe width="560" height="315" src={item.video} title={item.description} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+                    <iframe width="460" height="275" className='iframe' src={item.video} title={item.description} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
                     <p>{item.description}</p>
                   </div>
                 ))
@@ -128,13 +121,13 @@ const Homepage = () => {
         </Carousel>
         </div>
          <div className='carousel-container2'>
-         <h1 style={{position: "absolute", color: "rgb(169, 165, 165)", marginLeft:"-55%", marginTop: "-57%", fontSize: "20px"}}>Group Project</h1>
+         <h1 style={{position: "absolute", color: "#ffff", marginLeft:"-55%", marginTop: "-59%", fontSize: "20px"}}>Group Project</h1>
           
          <Carousel itemsToShow={1}>
               {
                 Homecard2.map(item =>(
                   <div key={item.id}>
-                    <iframe width="560" height="315" src={item.video} title={item.description} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+                    <iframe width="460" height="275" className='iframe1' src={item.video} title={item.description} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
                     <p>{item.description}</p>
                   </div>
                 ))
@@ -150,7 +143,7 @@ const Homepage = () => {
       </div>
       {/* about us summary page */}
      <div className='About'>
-      <img src={norrs} alt="not " style={{height: "84vh",marginTop: "3%",width: "60%", backGroundPosition: "center", backGroundSize: "cover", marginLeft: "40%", opacity: "0.8"}}/>
+      <img src={bb43} alt="not " style={{height: "89vh",marginTop: "3%",width: "60%", backGroundPosition: "center", backGroundSize: "cover", marginLeft: "40%", }}/>
       <div className='rics'>
           <h1>What We Do at NGA</h1>
           <p1>New generation Academy is an Excellence<br></br>
@@ -164,7 +157,7 @@ const Homepage = () => {
           <img src={ellip} style={{marginLeft: "35%", marginTop: "11%"}}/>
           <h1>Who We Are</h1>
           <section style={{padding: "6px"}}>
-            <p1>Lorem ipsum dolor sit amet adipcing
+            <p1 className='para'>Lorem ipsum dolor sit amet adipcing
             aqua lorem ipsum.</p1>
 
           </section>

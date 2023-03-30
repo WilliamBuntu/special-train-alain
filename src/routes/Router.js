@@ -32,7 +32,7 @@ const Signup =lazy(()=> import("../components/Signup"))
 const Login =lazy(()=> import("../components/Login"))
 const Singlestudent =lazy(()=> import("../components/Singlestudent"))
 const Register =lazy(()=> import("../components/Register"))
-const Staff =lazy(()=> import("../components/Staff/Staff"))
+// const Staff =lazy(()=> import("../components/Staff/Staff"))
 
 
 /*****Routes******/
@@ -79,10 +79,10 @@ element:<Singlestudent/>,
 path: "/Registerpage",
 element:<Register/>,
   },
-  {
-path: "/Staffpage",
-element: <Staff/>,
-  },
+  
+// path: "/Staff",
+// element: <Staff/>,
+//   },
   {
     
     path: "/dashboard",
